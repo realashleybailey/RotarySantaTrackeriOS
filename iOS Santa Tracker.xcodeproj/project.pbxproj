@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB20E62C28F76EF700641B8C /* iOS_Santa_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E62B28F76EF700641B8C /* iOS_Santa_TrackerApp.swift */; };
+		AB20E62E28F76EF700641B8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E62D28F76EF700641B8C /* ContentView.swift */; };
+		AB20E63028F76EF900641B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB20E62F28F76EF900641B8C /* Assets.xcassets */; };
+		AB20E63328F76EF900641B8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB20E63228F76EF900641B8C /* Preview Assets.xcassets */; };
+		AB20E63D28F76FC200641B8C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E63C28F76FC200641B8C /* LocationManager.swift */; };
+		AB20E64628F7702700641B8C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E64128F7702700641B8C /* APIError.swift */; };
+		AB20E64728F7702700641B8C /* RealtimeDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E64228F7702700641B8C /* RealtimeDBAPI.swift */; };
+		AB20E64828F7702700641B8C /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E64428F7702700641B8C /* Double+Ext.swift */; };
+		AB20E64928F7702700641B8C /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E64528F7702700641B8C /* UIColor+Ext.swift */; };
+		AB20E64F28F7704200641B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E64D28F7704200641B8C /* AppDelegate.swift */; };
+		AB20E65228F7705800641B8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20E65128F7705800641B8C /* Constants.swift */; };
+		AB20E65628F7711400641B8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB20E65528F7711400641B8C /* GoogleService-Info.plist */; };
+		AB20E65928F771A900641B8C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB20E65828F771A900641B8C /* FirebaseFirestoreSwift */; };
+		AB20E65B28F771A900641B8C /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB20E65A28F771A900641B8C /* FirebaseRemoteConfigSwift */; };
+		AB20E65D28F771A900641B8C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AB20E65C28F771A900641B8C /* FirebaseStorage */; };
+		AB491494291D7A7100145BFE /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB491493291D7A7100145BFE /* BottomSheetView.swift */; };
+		AB491496291D7BC400145BFE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB491495291D7BC400145BFE /* ButtonView.swift */; };
+		AB491498291D7D8800145BFE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB491497291D7D8800145BFE /* Colors.swift */; };
+		AB49149D291D9F9B00145BFE /* KML.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB49149C291D9F9B00145BFE /* KML.swift */; };
+		AB4914A2291DA1C400145BFE /* AEXML in Frameworks */ = {isa = PBXBuildFile; productRef = AB4914A1291DA1C400145BFE /* AEXML */; };
+		AB4914A4291DA54900145BFE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4914A3291DA54900145BFE /* MapView.swift */; };
+		ABE075642921C0A5002DA218 /* Throttler in Frameworks */ = {isa = PBXBuildFile; productRef = ABE075632921C0A5002DA218 /* Throttler */; };
+		ABE075662921D51B002DA218 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE075652921D51B002DA218 /* Others.swift */; };
+		ABE075682921D57C002DA218 /* PausedOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE075672921D57C002DA218 /* PausedOverlay.swift */; };
+		ABE0756E2921D847002DA218 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = ABE0756D2921D847002DA218 /* SlideOverCard */; };
+		ABE075782921DF3D002DA218 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE075772921DF3D002DA218 /* GifView.swift */; };
+		ABE0757C2921E559002DA218 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0757B2921E559002DA218 /* LocationRequest.swift */; };
+		ABE0758029220538002DA218 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0757F29220538002DA218 /* RouteManager.swift */; };
+		ABE07582292207F3002DA218 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE07581292207F3002DA218 /* Errors.swift */; };
+		ABE075862922BE3C002DA218 /* MapTypes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE075852922BE3C002DA218 /* MapTypes.xcassets */; };
+		ABE075882922BE79002DA218 /* MapTypeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE075872922BE79002DA218 /* MapTypeChanger.swift */; };
+		ABE0758B292362E5002DA218 /* Pulsator in Frameworks */ = {isa = PBXBuildFile; productRef = ABE0758A292362E5002DA218 /* Pulsator */; };
+		ABE07590292391DE002DA218 /* BottomSheetToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0758F292391DE002DA218 /* BottomSheetToolBarView.swift */; };
+		ABE0759529255CB4002DA218 /* RoutseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0759429255CB4002DA218 /* RoutseList.swift */; };
+		ABE0759729256A0B002DA218 /* HeaderButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */; };
+		ABE075F82925757D002DA218 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = ABE075F72925757D002DA218 /* BottomSheet */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB20E62828F76EF700641B8C /* iOS Santa Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Santa Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB20E62B28F76EF700641B8C /* iOS_Santa_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Santa_TrackerApp.swift; sourceTree = "<group>"; };
+		AB20E62D28F76EF700641B8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB20E62F28F76EF900641B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB20E63228F76EF900641B8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB20E63C28F76FC200641B8C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AB20E64128F7702700641B8C /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AB20E64228F7702700641B8C /* RealtimeDBAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDBAPI.swift; sourceTree = "<group>"; };
+		AB20E64428F7702700641B8C /* Double+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		AB20E64528F7702700641B8C /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		AB20E64D28F7704200641B8C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB20E65128F7705800641B8C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB20E65528F7711400641B8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB20E67028F7794A00641B8C /* iOS-Santa-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-Santa-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AB491493291D7A7100145BFE /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		AB491495291D7BC400145BFE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		AB491497291D7D8800145BFE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AB491499291D8B3A00145BFE /* BottsHollow.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BottsHollow.gpx; sourceTree = "<group>"; };
+		AB49149C291D9F9B00145BFE /* KML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KML.swift; sourceTree = "<group>"; };
+		AB4914A3291DA54900145BFE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ABE0755F291F609D002DA218 /* XCODE.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = XCODE.gpx; path = ../../../../Downloads/XCODE.gpx; sourceTree = "<group>"; };
+		ABE075652921D51B002DA218 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
+		ABE075672921D57C002DA218 /* PausedOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausedOverlay.swift; sourceTree = "<group>"; };
+		ABE075772921DF3D002DA218 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		ABE0757B2921E559002DA218 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		ABE0757F29220538002DA218 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		ABE07581292207F3002DA218 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		ABE075852922BE3C002DA218 /* MapTypes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MapTypes.xcassets; sourceTree = "<group>"; };
+		ABE075872922BE79002DA218 /* MapTypeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeChanger.swift; sourceTree = "<group>"; };
+		ABE0758F292391DE002DA218 /* BottomSheetToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetToolBarView.swift; sourceTree = "<group>"; };
+		ABE0759429255CB4002DA218 /* RoutseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutseList.swift; sourceTree = "<group>"; };
+		ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButtonsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB20E62528F76EF700641B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20E65928F771A900641B8C /* FirebaseFirestoreSwift in Frameworks */,
+				ABE075F82925757D002DA218 /* BottomSheet in Frameworks */,
+				ABE0758B292362E5002DA218 /* Pulsator in Frameworks */,
+				AB4914A2291DA1C400145BFE /* AEXML in Frameworks */,
+				ABE075642921C0A5002DA218 /* Throttler in Frameworks */,
+				ABE0756E2921D847002DA218 /* SlideOverCard in Frameworks */,
+				AB20E65B28F771A900641B8C /* FirebaseRemoteConfigSwift in Frameworks */,
+				AB20E65D28F771A900641B8C /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB20E61F28F76EF700641B8C = {
+			isa = PBXGroup;
+			children = (
+				ABE0755F291F609D002DA218 /* XCODE.gpx */,
+				AB491499291D8B3A00145BFE /* BottsHollow.gpx */,
+				AB20E62A28F76EF700641B8C /* iOS Santa Tracker */,
+				AB20E62928F76EF700641B8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB20E62928F76EF700641B8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E62828F76EF700641B8C /* iOS Santa Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB20E62A28F76EF700641B8C /* iOS Santa Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E67028F7794A00641B8C /* iOS-Santa-Tracker-Info.plist */,
+				AB20E64C28F7704200641B8C /* AppDelegate */,
+				AB20E63A28F76F8000641B8C /* Managers */,
+				ABE0759329255C85002DA218 /* Structs */,
+				AB20E63928F76F7300641B8C /* Classes */,
+				AB49148D291D6E2E00145BFE /* Views */,
+				AB20E62B28F76EF700641B8C /* iOS_Santa_TrackerApp.swift */,
+				AB20E65128F7705800641B8C /* Constants.swift */,
+				AB20E62D28F76EF700641B8C /* ContentView.swift */,
+				AB20E65528F7711400641B8C /* GoogleService-Info.plist */,
+				AB20E62F28F76EF900641B8C /* Assets.xcassets */,
+				ABE075852922BE3C002DA218 /* MapTypes.xcassets */,
+				AB20E63128F76EF900641B8C /* Preview Content */,
+			);
+			path = "iOS Santa Tracker";
+			sourceTree = "<group>";
+		};
+		AB20E63128F76EF900641B8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E63228F76EF900641B8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB20E63928F76F7300641B8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB491497291D7D8800145BFE /* Colors.swift */,
+				AB49149C291D9F9B00145BFE /* KML.swift */,
+				ABE075652921D51B002DA218 /* Others.swift */,
+				ABE07581292207F3002DA218 /* Errors.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB20E63A28F76F8000641B8C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E64028F7702700641B8C /* APIServices */,
+				AB20E64328F7702700641B8C /* Extensions */,
+				AB20E63C28F76FC200641B8C /* LocationManager.swift */,
+				ABE0757F29220538002DA218 /* RouteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AB20E64028F7702700641B8C /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E64128F7702700641B8C /* APIError.swift */,
+				AB20E64228F7702700641B8C /* RealtimeDBAPI.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		AB20E64328F7702700641B8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E64428F7702700641B8C /* Double+Ext.swift */,
+				AB20E64528F7702700641B8C /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB20E64C28F7704200641B8C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AB20E64D28F7704200641B8C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AB49148D291D6E2E00145BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB491493291D7A7100145BFE /* BottomSheetView.swift */,
+				AB491495291D7BC400145BFE /* ButtonView.swift */,
+				AB4914A3291DA54900145BFE /* MapView.swift */,
+				ABE075672921D57C002DA218 /* PausedOverlay.swift */,
+				ABE075772921DF3D002DA218 /* GifView.swift */,
+				ABE0757B2921E559002DA218 /* LocationRequest.swift */,
+				ABE075872922BE79002DA218 /* MapTypeChanger.swift */,
+				ABE0758F292391DE002DA218 /* BottomSheetToolBarView.swift */,
+				ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABE0759329255C85002DA218 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0759429255CB4002DA218 /* RoutseList.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB20E62728F76EF700641B8C /* iOS Santa Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB20E63628F76EF900641B8C /* Build configuration list for PBXNativeTarget "iOS Santa Tracker" */;
+			buildPhases = (
+				AB20E62428F76EF700641B8C /* Sources */,
+				AB20E62528F76EF700641B8C /* Frameworks */,
+				AB20E62628F76EF700641B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Santa Tracker";
+			packageProductDependencies = (
+				AB20E65828F771A900641B8C /* FirebaseFirestoreSwift */,
+				AB20E65A28F771A900641B8C /* FirebaseRemoteConfigSwift */,
+				AB20E65C28F771A900641B8C /* FirebaseStorage */,
+				AB4914A1291DA1C400145BFE /* AEXML */,
+				ABE075632921C0A5002DA218 /* Throttler */,
+				ABE0756D2921D847002DA218 /* SlideOverCard */,
+				ABE0758A292362E5002DA218 /* Pulsator */,
+				ABE075F72925757D002DA218 /* BottomSheet */,
+			);
+			productName = "iOS Santa Tracker";
+			productReference = AB20E62828F76EF700641B8C /* iOS Santa Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB20E62028F76EF700641B8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					AB20E62728F76EF700641B8C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AB20E62328F76EF700641B8C /* Build configuration list for PBXProject "iOS Santa Tracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB20E61F28F76EF700641B8C;
+			packageReferences = (
+				AB20E65728F771A900641B8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AB4914A0291DA1C400145BFE /* XCRemoteSwiftPackageReference "AEXML" */,
+				ABE075622921C0A5002DA218 /* XCRemoteSwiftPackageReference "Throttler" */,
+				ABE0756C2921D847002DA218 /* XCRemoteSwiftPackageReference "SlideOverCard" */,
+				ABE07589292362E5002DA218 /* XCRemoteSwiftPackageReference "Pulsator" */,
+				ABE075F62925757D002DA218 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
+			productRefGroup = AB20E62928F76EF700641B8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB20E62728F76EF700641B8C /* iOS Santa Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB20E62628F76EF700641B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE075862922BE3C002DA218 /* MapTypes.xcassets in Resources */,
+				AB20E63328F76EF900641B8C /* Preview Assets.xcassets in Resources */,
+				AB20E63028F76EF900641B8C /* Assets.xcassets in Resources */,
+				AB20E65628F7711400641B8C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB20E62428F76EF700641B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20E62E28F76EF700641B8C /* ContentView.swift in Sources */,
+				AB4914A4291DA54900145BFE /* MapView.swift in Sources */,
+				AB20E64728F7702700641B8C /* RealtimeDBAPI.swift in Sources */,
+				AB491496291D7BC400145BFE /* ButtonView.swift in Sources */,
+				ABE075662921D51B002DA218 /* Others.swift in Sources */,
+				AB20E62C28F76EF700641B8C /* iOS_Santa_TrackerApp.swift in Sources */,
+				AB20E64828F7702700641B8C /* Double+Ext.swift in Sources */,
+				AB20E64928F7702700641B8C /* UIColor+Ext.swift in Sources */,
+				ABE07590292391DE002DA218 /* BottomSheetToolBarView.swift in Sources */,
+				AB20E64628F7702700641B8C /* APIError.swift in Sources */,
+				ABE0757C2921E559002DA218 /* LocationRequest.swift in Sources */,
+				AB491498291D7D8800145BFE /* Colors.swift in Sources */,
+				ABE0758029220538002DA218 /* RouteManager.swift in Sources */,
+				AB20E64F28F7704200641B8C /* AppDelegate.swift in Sources */,
+				ABE07582292207F3002DA218 /* Errors.swift in Sources */,
+				AB49149D291D9F9B00145BFE /* KML.swift in Sources */,
+				AB491494291D7A7100145BFE /* BottomSheetView.swift in Sources */,
+				ABE075682921D57C002DA218 /* PausedOverlay.swift in Sources */,
+				AB20E63D28F76FC200641B8C /* LocationManager.swift in Sources */,
+				ABE075882922BE79002DA218 /* MapTypeChanger.swift in Sources */,
+				ABE075782921DF3D002DA218 /* GifView.swift in Sources */,
+				ABE0759729256A0B002DA218 /* HeaderButtonsView.swift in Sources */,
+				ABE0759529255CB4002DA218 /* RoutseList.swift in Sources */,
+				AB20E65228F7705800641B8C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB20E63428F76EF900641B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB20E63528F76EF900641B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB20E63728F76EF900641B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Santa Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BVRXPZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-Santa-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rotary Club";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need this for device tracking to our mapping system";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need this for device tracking to our mapping system";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashleybailey.rotarysantatracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB20E63828F76EF900641B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Santa Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BVRXPZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-Santa-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rotary Club";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need this for device tracking to our mapping system";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need this for device tracking to our mapping system";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashleybailey.rotarysantatracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB20E62328F76EF700641B8C /* Build configuration list for PBXProject "iOS Santa Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20E63428F76EF900641B8C /* Debug */,
+				AB20E63528F76EF900641B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB20E63628F76EF900641B8C /* Build configuration list for PBXNativeTarget "iOS Santa Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20E63728F76EF900641B8C /* Debug */,
+				AB20E63828F76EF900641B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB20E65728F771A900641B8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		AB4914A0291DA1C400145BFE /* XCRemoteSwiftPackageReference "AEXML" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tadija/AEXML.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		ABE075622921C0A5002DA218 /* XCRemoteSwiftPackageReference "Throttler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/boraseoksoon/Throttler";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		ABE0756C2921D847002DA218 /* XCRemoteSwiftPackageReference "SlideOverCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realashleybailey/SlideOverCard";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		ABE07589292362E5002DA218 /* XCRemoteSwiftPackageReference "Pulsator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shu223/Pulsator/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.3;
+			};
+		};
+		ABE075F62925757D002DA218 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realashleybailey/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB20E65828F771A900641B8C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB20E65728F771A900641B8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		AB20E65A28F771A900641B8C /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB20E65728F771A900641B8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		AB20E65C28F771A900641B8C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB20E65728F771A900641B8C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AB4914A1291DA1C400145BFE /* AEXML */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4914A0291DA1C400145BFE /* XCRemoteSwiftPackageReference "AEXML" */;
+			productName = AEXML;
+		};
+		ABE075632921C0A5002DA218 /* Throttler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE075622921C0A5002DA218 /* XCRemoteSwiftPackageReference "Throttler" */;
+			productName = Throttler;
+		};
+		ABE0756D2921D847002DA218 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE0756C2921D847002DA218 /* XCRemoteSwiftPackageReference "SlideOverCard" */;
+			productName = SlideOverCard;
+		};
+		ABE0758A292362E5002DA218 /* Pulsator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE07589292362E5002DA218 /* XCRemoteSwiftPackageReference "Pulsator" */;
+			productName = Pulsator;
+		};
+		ABE075F72925757D002DA218 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE075F62925757D002DA218 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AB20E62028F76EF700641B8C /* Project object */;
+}
