@@ -52,6 +52,11 @@ class RouteManager: ObservableObject {
         db.collection(self.folder).getDocuments(completion: self.RouteListErrorHandler)
     }
     
+    func setPublicRoute(_ document: String) {
+        let reference = db.document("routes/\(document)")
+        db.document("config/map-1").setData(["current_route": reference])
+    }
+    
     private func KMLrouteErrorHandler(_ data: Data?, _ error: Error?) -> Void {
         if let error = error {
             print(error.localizedDescription)
@@ -104,6 +109,7 @@ class RouteManager: ObservableObject {
     }
     
     private func documentToRouteItem(_ data: QueryDocumentSnapshot) throws -> RouteItem {
+        let id = data.documentID
         let name = data["name"] as! String
         let document = data["document"] as! String
         let uploaded = data["uploaded"] as! Firebase.Timestamp
@@ -114,7 +120,7 @@ class RouteManager: ObservableObject {
         
         let documentReference = storage.reference(forURL: document)
 
-        return RouteItem(name: name, document: documentReference, uploaded: uploaded)
+        return RouteItem(id: id, name: name, document: documentReference, uploaded: uploaded)
     }
     
     private func checkDocumentPath(string: String) -> Bool {

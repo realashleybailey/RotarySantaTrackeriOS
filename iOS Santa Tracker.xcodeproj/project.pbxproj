@@ -43,6 +43,8 @@
 		ABE0759529255CB4002DA218 /* RoutseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0759429255CB4002DA218 /* RoutseList.swift */; };
 		ABE0759729256A0B002DA218 /* HeaderButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */; };
 		ABE075F82925757D002DA218 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = ABE075F72925757D002DA218 /* BottomSheet */; };
+		ABE075FA29259658002DA218 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE075F929259658002DA218 /* DocumentPicker.swift */; };
+		ABE076032927EF0A002DA218 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE076022927EF0A002DA218 /* MapPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +65,6 @@
 		AB491493291D7A7100145BFE /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		AB491495291D7BC400145BFE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AB491497291D7D8800145BFE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		AB491499291D8B3A00145BFE /* BottsHollow.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BottsHollow.gpx; sourceTree = "<group>"; };
 		AB49149C291D9F9B00145BFE /* KML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KML.swift; sourceTree = "<group>"; };
 		AB4914A3291DA54900145BFE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		ABE0755F291F609D002DA218 /* XCODE.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = XCODE.gpx; path = ../../../../Downloads/XCODE.gpx; sourceTree = "<group>"; };
@@ -78,6 +79,15 @@
 		ABE0758F292391DE002DA218 /* BottomSheetToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetToolBarView.swift; sourceTree = "<group>"; };
 		ABE0759429255CB4002DA218 /* RoutseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutseList.swift; sourceTree = "<group>"; };
 		ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButtonsView.swift; sourceTree = "<group>"; };
+		ABE075F929259658002DA218 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		ABE075FB2925E34E002DA218 /* ForestLea.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ForestLea.gpx; path = "../../../../Downloads/Santa Routes/XCODE/ForestLea.gpx"; sourceTree = "<group>"; };
+		ABE075FC2925E34F002DA218 /* BottsHollow.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = BottsHollow.gpx; path = "../../../../Downloads/Santa Routes/XCODE/BottsHollow.gpx"; sourceTree = "<group>"; };
+		ABE075FD2925E34F002DA218 /* Snibstone.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Snibstone.gpx; path = "../../../../Downloads/Santa Routes/XCODE/Snibstone.gpx"; sourceTree = "<group>"; };
+		ABE075FE2925E34F002DA218 /* Ibstock.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Ibstock.gpx; path = "../../../../Downloads/Santa Routes/XCODE/Ibstock.gpx"; sourceTree = "<group>"; };
+		ABE075FF2925E34F002DA218 /* KenmoreCrescent.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = KenmoreCrescent.gpx; path = "../../../../Downloads/Santa Routes/XCODE/KenmoreCrescent.gpx"; sourceTree = "<group>"; };
+		ABE076002925E34F002DA218 /* GreenHill.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = GreenHill.gpx; path = "../../../../Downloads/Santa Routes/XCODE/GreenHill.gpx"; sourceTree = "<group>"; };
+		ABE076012925E34F002DA218 /* Ellistown.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Ellistown.gpx; path = "../../../../Downloads/Santa Routes/XCODE/Ellistown.gpx"; sourceTree = "<group>"; };
+		ABE076022927EF0A002DA218 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +112,14 @@
 		AB20E61F28F76EF700641B8C = {
 			isa = PBXGroup;
 			children = (
+				ABE075FC2925E34F002DA218 /* BottsHollow.gpx */,
+				ABE076012925E34F002DA218 /* Ellistown.gpx */,
+				ABE075FB2925E34E002DA218 /* ForestLea.gpx */,
+				ABE076002925E34F002DA218 /* GreenHill.gpx */,
+				ABE075FE2925E34F002DA218 /* Ibstock.gpx */,
+				ABE075FF2925E34F002DA218 /* KenmoreCrescent.gpx */,
+				ABE075FD2925E34F002DA218 /* Snibstone.gpx */,
 				ABE0755F291F609D002DA218 /* XCODE.gpx */,
-				AB491499291D8B3A00145BFE /* BottsHollow.gpx */,
 				AB20E62A28F76EF700641B8C /* iOS Santa Tracker */,
 				AB20E62928F76EF700641B8C /* Products */,
 			);
@@ -152,6 +168,7 @@
 				AB49149C291D9F9B00145BFE /* KML.swift */,
 				ABE075652921D51B002DA218 /* Others.swift */,
 				ABE07581292207F3002DA218 /* Errors.swift */,
+				ABE075F929259658002DA218 /* DocumentPicker.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 				ABE075872922BE79002DA218 /* MapTypeChanger.swift */,
 				ABE0758F292391DE002DA218 /* BottomSheetToolBarView.swift */,
 				ABE0759629256A0B002DA218 /* HeaderButtonsView.swift */,
+				ABE076022927EF0A002DA218 /* MapPin.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +328,7 @@
 				AB20E62E28F76EF700641B8C /* ContentView.swift in Sources */,
 				AB4914A4291DA54900145BFE /* MapView.swift in Sources */,
 				AB20E64728F7702700641B8C /* RealtimeDBAPI.swift in Sources */,
+				ABE075FA29259658002DA218 /* DocumentPicker.swift in Sources */,
 				AB491496291D7BC400145BFE /* ButtonView.swift in Sources */,
 				ABE075662921D51B002DA218 /* Others.swift in Sources */,
 				AB20E62C28F76EF700641B8C /* iOS_Santa_TrackerApp.swift in Sources */,
@@ -326,6 +345,7 @@
 				AB491494291D7A7100145BFE /* BottomSheetView.swift in Sources */,
 				ABE075682921D57C002DA218 /* PausedOverlay.swift in Sources */,
 				AB20E63D28F76FC200641B8C /* LocationManager.swift in Sources */,
+				ABE076032927EF0A002DA218 /* MapPin.swift in Sources */,
 				ABE075882922BE79002DA218 /* MapTypeChanger.swift in Sources */,
 				ABE075782921DF3D002DA218 /* GifView.swift in Sources */,
 				ABE0759729256A0B002DA218 /* HeaderButtonsView.swift in Sources */,

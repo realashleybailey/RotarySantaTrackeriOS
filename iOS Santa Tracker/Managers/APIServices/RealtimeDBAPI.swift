@@ -15,9 +15,9 @@ class RealtimeFirestore: NSObject  {
         let currentLocation = db.collection("places").document("tracker-1")
         batch.updateData(["location": GeoPoint(latitude: location.latitude, longitude: location.longitude)], forDocument: currentLocation)
         
-        let historyLocation = db.collection("places").document("tracker-1").collection("history").document(currentDateTime())
-        batch.setData(["location": GeoPoint(latitude: location.latitude, longitude: location.longitude), "time": Firebase.Timestamp()], forDocument: historyLocation)
-        
+//        let historyLocation = db.collection("places").document("tracker-1").collection("history").document(currentDateTime())
+//        batch.setData(["location": GeoPoint(latitude: location.latitude, longitude: location.longitude), "time": Firebase.Timestamp()], forDocument: historyLocation)
+//
 
         batch.commit()
         

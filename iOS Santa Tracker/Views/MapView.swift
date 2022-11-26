@@ -25,6 +25,7 @@ struct MapView: UIViewRepresentable {
         mapView.delegate = context.coordinator
         mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: "usersCurrentLocation")
         mapView.showsUserLocation = false
+        mapView.showsCompass = false
         
         currentLocationAnnotation.coordinate = locationManager.currentLocation
         mapView.addAnnotation(currentLocationAnnotation)

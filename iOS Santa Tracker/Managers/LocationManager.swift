@@ -118,7 +118,7 @@ extension LocationManager: CLLocationManagerDelegate {
         self.currentRegion = currentRegion
         
         if (locationUpdatesEnabled) {
-            Throttler.throttle(identifier: "location", delay: 5, shouldRunImmediately: true) {
+            Throttler.throttle(identifier: "location", delay: 2.5, shouldRunImmediately: true) {
                 self.realtimeFirestore.updateLocation(currentLocationCoordinates)
             }
         }

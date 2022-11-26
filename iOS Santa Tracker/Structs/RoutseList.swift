@@ -12,7 +12,7 @@ import FirebaseStorage
 typealias RouteList = [RouteItem]
 
 struct RouteItem: Hashable, Identifiable {
-    var id = UUID()
+    var id: String = UUID().uuidString
     let name: String
     let document: StorageReference
     let uploaded: Firebase.Timestamp
